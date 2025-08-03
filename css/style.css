@@ -1,0 +1,107 @@
+/* Сброс стандартных отступов и полей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 
+    box-sizing: border-box - чтобы padding и border 
+    включались в общую ширину элемента 
+  */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* 
+    Устанавливаем основной шрифт для всей страницы.
+    Arial - безопасный шрифт, доступный на всех устройствах.
+  */
+  line-height: 1.6;
+  /* 
+    Межстрочный интервал - делает текст более читаемым.
+    1.6 - это 160% от размера шрифта.
+  */
+  color: #333;
+  /* Основной цвет текста - темно-серый */
+}
+
+/* Стили для шапки сайта */
+.header {
+  background-color: #2c3e50;
+  /* Темно-синий цвет фона */
+  color: white;
+  /* Белый цвет текста */
+  padding: 1rem;
+  /* 
+    Внутренний отступ 1rem (≈16px).
+    rem - единица измерения, зависящая от размера шрифта корневого элемента.
+  */
+  display: flex;
+  /* 
+    Flexbox - современный способ расположения элементов.
+    Позволяет легко выравнивать элементы по горизонтали.
+  */
+  justify-content: space-between;
+  /* Равномерно распределяет пространство между элементами */
+  align-items: center;
+  /* Выравнивает элементы по центру по вертикали */
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+}
+
+/* Стили для меню навигации */
+.menu {
+  display: flex;
+  list-style: none;
+  /* Убираем маркеры у списка */
+}
+
+.menu li {
+  margin-left: 1rem;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  /* Убираем подчеркивание у ссылок */
+}
+
+.menu a:hover {
+  text-decoration: underline;
+  /* Подчеркивание при наведении */
+}
+
+/* Стили для основной части */
+.main-content {
+  display: flex;
+  padding: 1rem;
+}
+
+.products {
+  flex: 3;
+  /* Занимает 3 части доступного пространства */
+  padding-right: 1rem;
+}
+
+.sidebar {
+  flex: 1;
+  /* Занимает 1 часть доступного пространства */
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  /* Скругленные углы */
+}
+
+/* Стили для подвала */
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.footer p {
+  margin-bottom: 0.5rem;
+}

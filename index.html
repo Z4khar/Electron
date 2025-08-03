@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/cart.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  
+  <!-- Шапка сайта (Header) -->
+  <header class="header">
+    <div class="logo">
+      <!-- Логотип магазина - пока просто текст, позже можно заменить на изображение -->
+      <h1>TechShop</h1>
+    </div>
+
+    <nav class="navigation">
+      <!-- Навигационное меню -->
+      <ul class="menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="cart" style="cursor: pointer;">
+      🛒 Корзина (<span class="cart-count">0</span>)
+    </div>
+  </header>
+<h2>Наши товары</h2>
+  <!-- Основное содержимое страницы (Main Content) -->
+  <main class="main-content">
+    <section class="products">
+      <div class="product-list">
+        <!-- Карточки товаров будут добавляться сюда JavaScript -->
+      </div>
+      
+      <div class="product-list">
+        <!-- Пока оставляем пустым - товары добавим позже -->
+    
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <!-- Боковая панель для фильтров -->
+      <h3>Фильтры</h3>
+      <div class="filters">
+        <input type="text" id="search-input" placeholder="Поиск товаров..." />
+
+        <!-- Выпадающий список для сортировки -->
+        <select id="sort-select">
+          <option value="default">Без сортировки</option>
+          <option value="price-asc">Цена: по возрастанию</option>
+          <option value="price-desc">Цена: по убыванию</option>
+          <option value="name-asc">Название: A→Я</option>
+          <option value="name-desc">Название: Я→A</option>
+        </select>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Подвал сайта (Footer) -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 TechShop - Магазин электроники</p>
+      <p>Телефон: +7 (123) 456-78-90</p>
+      <p>Email: info@techshop.ru</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

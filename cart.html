@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./css/cart.css" />
+  <link rel="stylesheet" href="./css/modal.css" />
+
+  <title>Корзина</title>
+</head>
+<body>
+  <header class="header">
+    <h1>TechShop - Корзина</h1>
+    <a href="index.html">← Назад в магазин</a>
+  </header>
+
+  <main class="cart-container">
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <h3>Итого: <span id="cart-total">0</span> ₽</h3>
+      <button id="checkout-btn" class="checkout-button">Оформить заказ</button>
+    </div>
+  </main>
+  
+
+
+  <div id="order-modal" class="model">
+    <div class="modal-content">
+      <h2>Оформление заказа</h2>
+      <form id ="order-form">
+        <input type="text" name="name" placeholder="Ваше имя">
+        <input type="tel" name="phone" placeholder="Телефон">
+        <input type="email" name="email" placeholder="Email">
+        <button type="submit" onclick="zakaz()">Заказать</button>
+        <button id="go">Продолжить покупки</button>
+
+      </form>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+  <script>
+    function zakaz() { 
+      alert("Спасибо за заказ, уведомлеие о доставке поступит на почту")
+    }
+  </script>
+</body>
+</html>
